@@ -33,6 +33,6 @@ app.set(
 // Routes init
 route(          app);
 
-            app.listen(port, () =>
+                app.listen(port, () =>
                 console.log(`Example app listening on port http://localhost:${port}`),
             );
