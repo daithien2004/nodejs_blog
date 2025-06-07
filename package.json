@@ -1,46 +1,50 @@
 {
-  "name": "blog",
-  "version": "1.0.0",
-  "main": "src/index.js",
-  "scripts": {
-    "prepare": "husky install",
-    "beautiful": "lint-staged",
-    "start": "nodemon --inspect src/index.js",
-    "watch": "node-sass --watch src/resources/scss -o src/public/css",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/daithien2004/nodejs_blog.git"
-  },
-  "keywords": [
-    "f8",
-    "blog",
-    "f8",
-    "nodejs",
-    "nodejs"
-  ],
-  "author": "thien",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/daithien2004/nodejs_blog/issues"
-  },
-  "homepage": "https://github.com/daithien2004/nodejs_blog#readme",
-  "lint-staged": {
-    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
-  },
-  "description": "",
-  "dependencies": {
-    "express": "^5.1.0",
-    "express-handlebars": "^7.1.3",
-    "mongoose": "^8.14.3"
-  },
-  "devDependencies": {
-    "husky": "^9.1.7",
-    "lint-staged": "^15.5.2",
-    "morgan": "^1.10.0",
-    "node-sass": "^9.0.0",
-    "nodemon": "^3.1.10",
-    "prettier": "^3.5.3"
-  }
+    "name": "blog",
+    "version": "1.0.0",
+    "main": "src/index.js",
+    "scripts": {
+        "prepare": "husky install",
+        "beautiful": "lint-staged",
+        "format": "prettier --write \"src/**/*.{js,json,scss,hbs}\"",
+        "start": "nodemon --inspect src/index.js",
+        "watch": "node-sass --watch src/resources/scss -o src/public/css",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/daithien2004/nodejs_blog.git"
+    },
+    "keywords": [
+        "f8",
+        "blog",
+        "f8",
+        "nodejs",
+        "nodejs"
+    ],
+    "author": "thien",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/daithien2004/nodejs_blog/issues"
+    },
+    "homepage": "https://github.com/daithien2004/nodejs_blog#readme",
+    "lint-staged": {
+        "src/**/*.{js,json,scss,hbs}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+    },
+    "description": "",
+    "dependencies": {
+        "express": "^5.1.0",
+        "express-handlebars": "^7.1.3",
+        "method-override": "^3.0.0",
+        "mongoose": "^8.14.3",
+        "mongoose-slug-updater": "^3.3.0"
+    },
+    "devDependencies": {
+        "husky": "^9.1.7",
+        "lint-staged": "^15.5.2",
+        "morgan": "^1.10.0",
+        "node-sass": "^9.0.0",
+        "nodemon": "^3.1.10",
+        "prettier": "^3.5.3",
+        "prettier-plugin-handlebars": "^3.0.2"
+    }
 }
